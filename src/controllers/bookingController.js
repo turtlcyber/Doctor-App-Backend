@@ -45,7 +45,7 @@ const createBooking = async (req, res) => {
             isBookingAlreadyExist = await bookingModel.findOne({ bookingId: bookingId });
         } while (isBookingAlreadyExist);
 
-        let imgObj = null;
+        let imgObj = { fileName: "", filePath: "" };
         if ("notes_file" in req.body) {
             let { File_Extension, File_Path, File_data, File_name } = req.body.notes_file;
 

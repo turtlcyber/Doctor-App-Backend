@@ -60,7 +60,7 @@ app.use(
 
 app.use("/userImages", express.static(__dirname + "/userImages"));
 app.use("/doctorImages", express.static(__dirname + "/doctorImages"));
-app.use("/categoryImages", express.static(__dirname + "/categoryImages/"));
+app.use("/categoryImages", express.static(__dirname + "/categoryImages"));
 app.use("/bannerImages", express.static(__dirname + "/bannerImages"));
 app.use("/courseImages", express.static(__dirname + "/courseImages"));
 app.use("/uploads", express.static(__dirname + "/uploads"));
